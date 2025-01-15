@@ -27,10 +27,6 @@ footer {
   color: darkgrey;
 }
 
-.second-line .col:first-child {
-  display: none;
-}
-
 .third-line {
   display: none;
 }
@@ -48,6 +44,14 @@ footer {
     border-bottom: 1px solid #392d23;
   }
 }
+
+@media (max-width: 48rem) {
+  .second-line .col {
+    flex: 0 0 50%; /* 모바일에서는 2개씩 한 줄에 배치 */
+    max-width: 50%;
+  }
+}
+
 
 @media screen and (max-width: 48rem) {
   .third-line {
